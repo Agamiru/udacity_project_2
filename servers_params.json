@@ -1,0 +1,10 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "UdacityProject2"
+    },
+    {
+        "ParameterKey": "LaunchConfImageId",
+        "ParameterValue": "ami-0b152cfd354c4c7a4"
+    }
+]
