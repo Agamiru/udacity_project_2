@@ -17,11 +17,6 @@ Parameters:
         Type: String
         Default: t2.medium
 
-    LaunchConfKeyName:
-        Description: Launch configuration EC2 Key pair name
-        Type: String
-        Default: ec2-keypair
-
 
 Resources:
   # instace profile contains the IAM Role name(s) that we want to associate to our auto scaling EC2 Servers
@@ -66,7 +61,6 @@ Resources:
                   Ebs: 
                     VolumeSize: '10'
                     VolumeType: gp3
-            KeyName: !Ref LaunchConfKeyName
             SecurityGroups:
                 - !Ref InternetAccessSG
             UserData: !Base64 |
